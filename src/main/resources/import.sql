@@ -1,2 +1,2 @@
-INSERT INTO TBL_FORNECEDOR (ID, NAME, EMAIL) VALUES (1, 'SupplyBrazil', 'comercial@supplybrazil.com');
-INSERT INTO TBL_FORNECEDOR (ID, NAME, EMAIL) VALUES (2, 'SupplyCom', 'comercial@supplycom.com');
+INSERT INTO TBL_FORNECEDOR (NAME, EMAIL) VALUES ('SupplyBrazil', 'comercial@supplybrazil.com');
+INSERT INTO TBL_FORNECEDOR (NAME, EMAIL) VALUES ('SupplyCom', 'comercial@supplycom.com');

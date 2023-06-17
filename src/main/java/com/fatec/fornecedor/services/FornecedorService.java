@@ -25,4 +25,18 @@ public class FornecedorService {
     public List<Fornecedor> getFornecedores(){
         return fornecedorRepository.findAll();
     }
+
+    public void deleteById(int id) {
+        Fornecedor fornecedor = getFornecedorById(id);
+        fornecedorRepository.delete(fornecedor);
+    }
+
+    public Fornecedor save(Fornecedor fornecedor) {
+        return fornecedorRepository.save(fornecedor);
+    }
+
+    public void update(int id, Fornecedor fornecedor) {
+        getFornecedorById(id);
+        fornecedorRepository.save(fornecedor);
+    }
 }
